@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обо мне — Нелли Вод (nelly_vod), модель и контент-креатор</title>
+  <meta name="description" content="Нелли Вод — модель и контент-креатор. История, параметры, ценности и подход к работе с брендами.">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ok)document.documentElement.classList.add('loaded','failsafe')},4500);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nelly</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-pct" id="preloaderPct">0%</div>
+    </div>
+  </div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo"><span class="logo-main">НЕЛЛИ</span><span class="logo-sub">Model &amp; Creator</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Основное меню">
+      <a href="index.html" class="nav-item" data-i18n="nav_home">Главная</a>
+      <a href="stats.html" class="nav-item" data-i18n="nav_stats">Статистика</a>
+      <a href="portfolio.html" class="nav-item" data-i18n="nav_portfolio">Портфолио</a>
+      <a href="about.html" class="nav-item active" data-i18n="nav_about">Обо мне</a>
+      <a href="contact.html" class="nav-item nav-item-cta" data-i18n="nav_collab">Сотрудничество</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru" aria-label="Русский">РУ</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="page-narrow">
+    <!-- ИНТРО -->
+    <section class="section about-page">
+      <div class="container about-hero">
+        <div class="about-visual reveal">
+          <div class="portrait" data-tilt>
+            <img class="portrait-img" src="images/about.jpg" alt="Нелли — портрет" data-fallback>
+            <div class="portrait-fallback" aria-hidden="true">N</div>
+            <div class="portrait-badge glass">
+              <span>5+</span>
+              <small data-i18n="about_badge_exp">лет в кадре</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-intro reveal" style="--d:.15s">
+          <span class="section-tag" data-i18n="about_tag">Обо мне</span>
+          <h1 class="about-title">
+            <span data-i18n="about_title">Привет, я</span>
+            <span class="gradient-text italic" data-i18n="about_title_highlight">Нелли</span>
+          </h1>
+          <p class="about-lead" data-i18n="about_lead">Модель и контент-креатор. Снимаю контент для брендов моды, красоты и lifestyle — такой, который хочется сохранить, а не пролистать.</p>
+          <p class="about-text" data-i18n="about_text_1">Начинала с фотосессий для друзей и небольших шоурумов. Со временем поняла главное: людям интересна не реклама, а история. Поэтому каждый продукт я встраиваю в свою жизнь, а не просто держу в кадре.</p>
+          <p class="about-text" data-i18n="about_text_2">Сегодня я сама продумываю концепцию, образ и сценарий, снимаю и монтирую. Бренд получает готовый контент и живую реакцию аудитории.</p>
+          <div class="about-signature" aria-hidden="true">Nelly</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМПОЗИТКА -->
+    <section class="section compcard-section" id="compcard">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag" data-i18n="compcard_tag">Композитка</span>
+          <h2 class="section-title" data-i18n="compcard_title">Параметры</h2>
+          <p class="section-sub" data-i18n="compcard_subtitle">Модельная карта для агентств, фотографов и кастингов. Можно сохранить в PDF.</p>
+        </div>
+        <div class="compcard reveal">
+          <div class="compcard-photo">
+            <img src="images/about.jpg" alt="Нелли — фото для композитки" onerror="this.remove()">
+          </div>
+          <div class="compcard-info">
+            <div class="compcard-head">
+              <div class="compcard-name">НЕЛЛИ</div>
+              <div class="compcard-sub" data-i18n="compcard_location">Model &amp; Content Creator · Москва</div>
+            </div>
+            <dl class="compcard-grid">
+              <div><dt data-i18n="compcard_height">Рост</dt><dd>165 см</dd></div>
+              <div><dt data-i18n="compcard_bust">Грудь</dt><dd>86 см</dd></div>
+              <div><dt data-i18n="compcard_waist">Талия</dt><dd>63 см</dd></div>
+              <div><dt data-i18n="compcard_hips">Бёдра</dt><dd>93 см</dd></div>
+              <div><dt data-i18n="compcard_size">Размер</dt><dd>XS-S</dd></div>
+              <div><dt data-i18n="compcard_shoes">Обувь</dt><dd>38-39 EU</dd></div>
+              <div><dt data-i18n="compcard_hair">Волосы</dt><dd>Блондинка</dd></div>
+              <div><dt data-i18n="compcard_eyes">Глаза</dt><dd>Голубые</dd></div>
+            </dl>
+            <div class="compcard-foot">
+              <span>Instagram: @nelly_vod</span>
+              <span>Telegram: @V_nellyvod</span>
+              <span>TikTok: @nelly_vod</span>
+            </div>
+          </div>
+        </div>
+        <div class="compcard-actions reveal">
+          <button type="button" class="btn btn-outline magnetic" data-print data-track="compcard_pdf">
+            <span data-i18n="compcard_save">Сохранить композитку в PDF</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПУТЬ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag" data-i18n="timeline_tag">Путь</span>
+          <h2 class="section-title">
+            <span data-i18n="timeline_title">От первых кадров до</span>
+            <span class="gradient-text italic" data-i18n="timeline_title_highlight">брендов</span>
+          </h2>
+        </div>
+        <!-- ЗАМЕНИ годы и события на реальные -->
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <span class="tl-year" data-i18n="timeline_2020">2020</span>
+            <h3 data-i18n="timeline_2020_title">Первые съёмки</h3>
+            <p data-i18n="timeline_2020_text">Тест-съёмки с фотографами, поиск своего стиля и образа в кадре.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-year" data-i18n="timeline_2022">2022</span>
+            <h3 data-i18n="timeline_2022_title">Запуск блога</h3>
+            <p data-i18n="timeline_2022_text">Instagram и TikTok: lifestyle, мода, закулисье съёмок.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-year" data-i18n="timeline_2024">2024</span>
+            <h3 data-i18n="timeline_2024_title">Коммерческие проекты</h3>
+            <p data-i18n="timeline_2024_text">Первые интеграции и UGC-контент для брендов одежды и косметики.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-year" data-i18n="timeline_now">Сейчас</span>
+            <h3 data-i18n="timeline_now_title">Долгосрочные коллаборации</h3>
+            <p data-i18n="timeline_now_text">Амбассадорство, съёмки под ключ и контент с измеримым результатом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕННОСТИ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag" data-i18n="values_tag">Ценности</span>
+          <h2 class="section-title">
+            <span data-i18n="values_title">На чём держится</span>
+            <span class="gradient-text italic" data-i18n="values_title_highlight">работа</span>
+          </h2>
+        </div>
+        <div class="features-grid reveal">
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="heart"></div>
+            <h3 class="feature-title" data-i18n="value1_title">Честность</h3>
+            <p class="feature-desc" data-i18n="value1_desc">Рекламирую только то, чем пользовалась бы сама. Поэтому аудитория верит рекомендациям.</p>
+            <span class="feature-tag" data-i18n="value1_tag">Доверие</span>
+          </article>
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="camera"></div>
+            <h3 class="feature-title" data-i18n="value2_title">Эстетика</h3>
+            <p class="feature-desc" data-i18n="value2_desc">Свет, цвет, композиция и образ продуманы заранее. Контент выглядит дорого, даже если снят на телефон.</p>
+            <span class="feature-tag" data-i18n="value2_tag">Визуал</span>
+          </article>
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="chart"></div>
+            <h3 class="feature-title" data-i18n="value3_title">Результат</h3>
+            <p class="feature-desc" data-i18n="value3_desc">Красивая картинка — это только начало. Важно, сколько людей увидели, сохранили и купили.</p>
+            <span class="feature-tag" data-i18n="value3_tag">Цифры</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <span class="section-tag" data-i18n="about_cta_tag">Познакомимся?</span>
+            <h2 class="cta-title">
+              <span data-i18n="about_cta_title">Расскажите о бренде,<br>а я — о</span>
+              <span class="gradient-text italic" data-i18n="about_cta_title_highlight">идее</span>
+            </h2>
+            <p class="cta-text" data-i18n="about_cta_text">Отвечу в течение дня и предложу формат под вашу задачу.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary magnetic" data-track="about_contact">
+                <span data-i18n="cta_btn_brief">Заполнить бриф</span>
+                <span data-icon="arrow"></span>
+              </a>
+              <a data-link="tgDm" target="_blank" rel="noopener" class="btn btn-outline magnetic" data-track="contact_telegram">
+                <span data-icon="telegram"></span>
+                <span data-i18n="cta_btn_telegram">Написать в Telegram</span>
+              </a>
+            </div>
+          </div>
+          <div class="floating-card glass">
+            <small data-i18n="cta_views">Просмотры за 30 дней</small>
+            <strong class="gradient-text" data-value="insights.views" data-format="k">0</strong>
+            <small><span data-value="insights.nonFollowersPct" data-suffix="%"></span> — <span data-i18n="cta_new_viewers">новые зрители</span></small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">НЕЛЛИ</div>
+          <p class="footer-tagline" data-i18n="footer_tagline">Модель · Контент-креатор</p>
+          <div class="footer-socials" id="footerSocials"></div>
+        </div>
+        <nav class="footer-nav" aria-label="Нижнее меню">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="stats.html" data-i18n="nav_stats">Статистика</a>
+          <a href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a>
+          <a href="contact.html" data-i18n="nav_collab">Сотрудничество</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Нелли. <span data-i18n="footer_rights">Все права защищены</span>.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Кнопка «Сохранить в PDF»: открывает печать, в ней выбрать «Сохранить как PDF»
+    document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+  </script>
+  <script src="js/mobile-fx.js"></script>
+  <script src="js/fx3d.js"></script>
+</body>
+</html>

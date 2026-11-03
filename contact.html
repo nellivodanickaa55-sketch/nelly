@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сотрудничество — Нелли</title>
+  <meta name="description" content="Заполните бриф для обсуждения проекта с Нелли. Отвечу в течение 24 часов.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nelly</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-pct" id="preloaderPct">0%</div>
+    </div>
+  </div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo"><span class="logo-main">НЕЛЛИ</span><span class="logo-sub">Model &amp; Creator</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Основное меню">
+  <a href="index.html" class="nav-item" data-i18n="nav_home">Главная</a>
+  <a href="stats.html" class="nav-item" data-i18n="nav_stats">Статистика</a>
+  <a href="portfolio.html" class="nav-item" data-i18n="nav_portfolio">Портфолио</a>
+  <a href="about.html" class="nav-item" data-i18n="nav_about">Обо мне</a>
+  <a href="contact.html" class="nav-item nav-item-cta active" data-i18n="nav_collab">Сотрудничество</a>
+  <div class="lang-switcher">
+    <button class="lang-btn" data-lang="ru" aria-label="Русский">РУ</button>
+    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+  </div>
+</nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="section contact-page">
+      <div class="container">
+        <!-- Hero -->
+       <div class="contact-hero reveal">
+  <h1 class="contact-hero-title" data-i18n="contact_title">Создадим контент<br>вместе</h1>
+  <p class="section-sub" style="max-width:600px;margin-inline:auto" data-i18n="contact_subtitle">Расскажите о задаче — отвечу в течение 24 часов и предложу формат под ваш бюджет.</p>
+</div>
+
+        <!-- Способы связи -->
+        <div class="contact-methods reveal" style="margin-top:4rem">
+  <div class="contact-card contact-card-primary">
+    <div class="contact-card-icon telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+    </div>
+    <h3 data-i18n="contact_telegram">Telegram</h3>
+    <p data-i18n="contact_telegram_desc">Самый быстрый способ. Отвечаю в течение нескольких часов.</p>
+    <a data-link="tgDm" class="btn btn-primary btn-large magnetic" data-track="contact_telegram_primary">
+      <span data-icon="telegram"></span>
+      <span data-i18n="contact_telegram_btn">Написать в Telegram</span>
+    </a>
+    <div class="contact-perks">
+      <span class="perk-badge" data-i18n="contact_telegram_perks">⚡ Быстро 💬 Удобно</span>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-card-icon instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+    </div>
+    <h3 data-i18n="contact_instagram">Instagram Direct</h3>
+    <p data-i18n="contact_instagram_desc">Напишите в директ — также быстро отвечу.</p>
+    <a data-link="instaDm" class="btn btn-outline btn-large magnetic" data-track="contact_instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+      <span data-i18n="contact_instagram_btn">Написать в Instagram</span>
+    </a>
+    <div class="contact-perks">
+      <span class="perk-badge" data-i18n="contact_instagram_perks">📸 Портфолио</span>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-card-icon email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </div>
+    <h3 data-i18n="contact_email">Email</h3>
+    <p data-i18n="contact_email_desc">Для официальных предложений и детального обсуждения.</p>
+    <a id="emailLink" class="btn btn-outline btn-large magnetic" data-track="contact_email">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span data-i18n="contact_email_btn">Написать Email</span>
+    </a>
+  </div>
+</div>
+
+        <!-- Бриф-форма -->
+       <div class="brief-header">
+  <span class="section-tag" data-i18n="contact_brief_tag">Или заполните бриф</span>
+  <h2 class="section-title" data-i18n="contact_brief_title">Расскажите о проекте</h2>
+  <p class="section-sub" data-i18n="contact_brief_subtitle">Чем подробнее опишете задачу, тем точнее будет предложение. Все поля необязательные, но желательные.</p>
+</div>
+
+<form class="brief-form" id="briefForm">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="brandName" data-i18n="form_brand">Название бренда *</label>
+      <input type="text" id="brandName" name="brandName" data-i18n="form_brand_placeholder" placeholder="Например: Fashion House" required>
+    </div>
+    <div class="form-group">
+      <label for="contactPerson" data-i18n="form_name">Ваше имя *</label>
+      <input type="text" id="contactPerson" name="contactPerson" data-i18n="form_name_placeholder" placeholder="Как к вам обращаться" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email" data-i18n="form_email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com">
+    </div>
+    <div class="form-group">
+      <label for="telegram" data-i18n="form_telegram">Telegram</label>
+      <input type="text" id="telegram" name="telegram" data-i18n="form_telegram_placeholder" placeholder="@username">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="projectType" data-i18n="form_format">Формат сотрудничества *</label>
+    <select id="projectType" name="projectType" required>
+      <option value="" data-i18n="form_format_choose">Выберите формат</option>
+      <option value="integration" data-i18n="form_format_integration">Рекламная интеграция (пост + Stories)</option>
+      <option value="ugc" data-i18n="form_format_ugc">UGC контент для ваших соцсетей</option>
+      <option value="photoshoot" data-i18n="form_format_photoshoot">Съёмка для каталога/сайта</option>
+      <option value="ambassador" data-i18n="form_format_ambassador">Амбассадорство (долгосрочное)</option>
+      <option value="event" data-i18n="form_format_event">Участие в мероприятии</option>
+      <option value="other" data-i18n="form_format_other">Другое (опишу ниже)</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="description" data-i18n="form_description">Описание проекта *</label>
+    <textarea id="description" name="description" rows="5" data-i18n="form_description_placeholder" placeholder="Расскажите о продукте, задаче, целевой аудитории. Чем подробнее — тем лучше." required></textarea>
+    <small class="form-hint" data-i18n="form_description_hint">Например: нужен контент для запуска новой коллекции одежды, ЦА — девушки 18-25 лет.</small>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="budget" data-i18n="form_budget">Бюджет</label>
+      <select id="budget" name="budget">
+        <option value="" data-i18n="form_budget_choose">Выберите диапазон</option>
+        <option value="under50k" data-i18n="form_budget_under50k">До 50 000 ₽</option>
+        <option value="50k-100k" data-i18n="form_budget_50k100k">50 000 – 100 000 ₽</option>
+        <option value="100k-200k" data-i18n="form_budget_100k200k">100 000 – 200 000 ₽</option>
+        <option value="200k+" data-i18n="form_budget_200k">От 200 000 ₽</option>
+        <option value="discuss" data-i18n="form_budget_discuss">Обсудим индивидуально</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="deadline" data-i18n="form_deadline">Желаемые сроки</label>
+      <input type="text" id="deadline" name="deadline" data-i18n="form_deadline_placeholder" placeholder="Например: до конца месяца">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="referral" data-i18n="form_referral">Как узнали обо мне?</label>
+    <select id="referral" name="referral">
+      <option value="" data-i18n="form_referral_choose">Выберите вариант</option>
+      <option value="instagram" data-i18n="form_referral_instagram">Instagram</option>
+      <option value="tiktok" data-i18n="form_referral_tiktok">TikTok</option>
+      <option value="telegram" data-i18n="form_referral_telegram">Telegram</option>
+      <option value="recommendation" data-i18n="form_referral_recommendation">Рекомендация</option>
+      <option value="search" data-i18n="form_referral_search">Поиск в интернете</option>
+      <option value="other" data-i18n="form_referral_other">Другое</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-large" style="width:100%;margin-top:1.5rem">
+    <span data-i18n="form_submit">Отправить бриф</span>
+    <span data-icon="arrow"></span>
+  </button>
+
+  <p class="form-footer" data-i18n="form_footer">Нажимая кнопку, вы соглашаетесь с обработкой данных. Отвечу в течение 24 часов.</p>
+</form>
+
+          <div id="formSuccess" class="form-message success" hidden>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+  <h3 data-i18n="form_success_title">Остался один шаг</h3>
+  <p data-i18n="form_success_text">Открылся Telegram с готовым сообщением. Нажмите «Отправить», и бриф у Нелли. Если текст не подставился, вставьте его в чат: он уже скопирован.</p>
+  <a data-link="tgDm" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:1.5rem">
+    <span data-i18n="form_success_btn">Открыть Telegram ещё раз</span>
+  </a>
+</div>
+
+
+        <!-- FAQ -->
+        <div class="faq-header">
+  <span class="section-tag" data-i18n="faq_tag">FAQ</span>
+  <h2 class="section-title" data-i18n="faq_title">Частые вопросы</h2>
+</div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-question">💰 Какая стоимость сотрудничества?</summary>
+              <div class="faq-answer">
+                <p>Стоимость зависит от формата:</p>
+                <ul>
+                  <li><strong>Рекламная интеграция</strong> (пост/reels + Stories) — от 5 000 ₽</li>
+                  <li><strong>UGC контент</strong> (10-20+ фото/видео ) — от 35 000 ₽</li>
+                  <li><strong>Амбассадорство</strong> — обсуждается индивидуально</li>
+                </ul>
+                <p>Точная цена зависит от задачи, сроков и эксклюзивности. Обсудим после брифа.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">⏱️ Какие сроки реализации?</summary>
+              <div class="faq-answer">
+                <p><strong>UGC контент</strong> — 3-5 рабочих дней после получения продукта.</p>
+                <p><strong>Рекламная интеграция</strong> — согласовываем график публикации под ваши задачи.</p>
+                <p><strong>Съёмка для каталога</strong> — от 1 недели (съёмка + обработка).</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">📊 Предоставляете ли отчётность?</summary>
+              <div class="faq-answer">
+                <p>Да! После каждой публикации предоставляю детальную статистику:</p>
+                <ul>
+                  <li>Охваты (reach)</li>
+                  <li>Вовлечённость (лайки, комментарии, сохранения)</li>
+                  <li>Переходы по ссылке (если есть)</li>
+                  <li>Скриншоты из статистики Instagram/TikTok</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">🎯 С какими брендами работаете?</summary>
+              <div class="faq-answer">
+                <p>Я работаю с брендами из сфер:</p>
+                <ul>
+                  <li>Мода и одежда</li>
+                  <li>Красота и косметика</li>
+                  <li>Lifestyle и аксессуары</li>
+                  <li>Фитнес и здоровье</li>
+                  <li>Travel и отели</li>
+                </ul>
+                <p>Открыта к нестандартным проектам! Главное — чтобы продукт был качественным и соответствовал интересам моей аудитории.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">🤝 Работаете по договору?</summary>
+              <div class="faq-answer">
+                <p>Да, при необходимости заключаем официальный договор (ИП или самозанятость). Работаю с НДС и без — обсудим ваш формат.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">📸 Нужно ли предоставлять продукт?</summary>
+              <div class="faq-answer">
+                <p><strong>Для UGC и рекламы</strong> — да, продукт нужен для съёмки.</p>
+                <p><strong>Для каталожной съёмки</strong> — можем работать в вашем шоуруме или студии.</p>
+                <p>Доставку по Москве обычно организует бренд, но можем обсудить.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">НЕЛЛИ</div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Модель · Контент-креатор</p>
+        <div class="footer-socials" id="footerSocials"></div>
+      </div>
+        <nav class="footer-nav" aria-label="Нижнее меню">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="stats.html" data-i18n="nav_stats">Статистика</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a>
+        <a href="about.html" data-i18n="nav_about">Обо мне</a>
+      </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Нелли. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/mobile-fx.js"></script>
+  <script src="js/fx3d.js"></script>
+</body>
+</html>

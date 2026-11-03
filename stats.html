@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статистика — Нелли</title>
+  <meta name="description" content="Детальная статистика аудитории Нелли по всем платформам: Instagram, TikTok, Telegram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/stats.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nelly</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-pct" id="preloaderPct">0%</div>
+    </div>
+  </div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo"><span class="logo-main">НЕЛЛИ</span><span class="logo-sub">Model &amp; Creator</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Основное меню">
+      <a href="index.html" class="nav-item">Главная</a>
+      <a href="stats.html" class="nav-item active">Статистика</a>
+      <a href="portfolio.html" class="nav-item">Портфолио</a>
+      <a href="about.html" class="nav-item">Обо мне</a>
+      <a href="contact.html" class="nav-item nav-item-cta">Сотрудничество</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+  <section class="section stats-page">
+    <div class="container">
+      <div class="stats-hero reveal">
+  <span class="section-tag" data-i18n="stats_tag">Instagram Insights</span>
+  <h1 class="stats-hero-title">
+    <span data-i18n="stats_title">Статистика </span>
+    <span class="gradient-text italic" data-i18n="stats_title_highlight">без фильтров</span>
+  </h1>
+  <p class="section-sub" style="margin-inline:auto">
+    <span data-i18n="stats_subtitle">Официальные данные Instagram за период </span>
+    <span data-value="insights.period"></span>.
+  </p>
+  <div class="verified-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span data-i18n="stats_verified">Скриншоты статистики — по запросу бренда</span>
+  </div>
+</div>
+
+      <div class="kpi-grid reveal">
+  <div class="kpi">
+    <small data-i18n="stats_kpi_views">Просмотры</small>
+    <strong data-value="insights.views" data-format="k">0</strong>
+    <span data-i18n="stats_kpi_views_sub">за 30 дней</span>
+  </div>
+  <div class="kpi">
+    <small data-i18n="stats_kpi_viewers">Уникальные зрители</small>
+    <strong data-value="insights.viewers" data-format="k">0</strong>
+    <span data-i18n="stats_kpi_viewers_sub">аккаунтов</span>
+  </div>
+  <div class="kpi">
+    <small data-i18n="stats_kpi_interactions">Взаимодействия</small>
+    <strong data-value="insights.interactions" data-format="k">0</strong>
+    <span data-i18n="stats_kpi_interactions_sub">лайки, комментарии, сохранения</span>
+  </div>
+  <div class="kpi">
+    <small data-i18n="stats_kpi_engagement">Вовлечённость</small>
+    <strong data-value="insights.engagementPct" data-suffix="%">0</strong>
+    <span data-i18n="stats_kpi_engagement_sub">от всех просмотров</span>
+  </div>
+</div>
+
+      <div class="panels-2 reveal">
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_who_watches">Кто смотрит контент</h3>
+    <div class="split"><div class="split-a" id="splitA"></div></div>
+    <div class="split-legend">
+      <span><i class="dot dot-a"></i><span data-i18n="stats_followers">Подписчики</span> <b data-value="insights.followersPct" data-suffix="%"></b></span>
+      <span><i class="dot dot-b"></i><span data-i18n="stats_new_viewers">Новые зрители</span> <b data-value="insights.nonFollowersPct" data-suffix="%"></b></span>
+    </div>
+    <p class="panel-note" data-i18n="stats_note_reach">8 из 10 просмотров — люди, которые ещё не подписаны. Интеграция выходит далеко за пределы блога.</p>
+  </div>
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_by_format">Просмотры по форматам</h3>
+    <div class="hbars" id="typeBars"></div>
+    <p class="panel-note" data-i18n="stats_note_reels">Reels дают больше 60% просмотров — лучший формат для рекламы.</p>
+  </div>
+</div>
+
+      <div class="panels-2 panels-gender reveal">
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_gender">Пол</h3>
+    <div class="donut-wrap">
+      <div class="donut" id="genderDonut">
+        <div class="donut-center">
+          <strong data-value="insights.gender.men" data-suffix="%"></strong>
+          <small data-i18n="stats_men">мужчины</small>
+        </div>
+      </div>
+      <div class="split-legend split-legend-col">
+        <span><i class="dot dot-a"></i><span data-i18n="stats_men">Мужчины</span> <b data-value="insights.gender.men" data-suffix="%"></b></span>
+        <span><i class="dot dot-b"></i><span data-i18n="stats_women">Женщины</span> <b data-value="insights.gender.women" data-suffix="%"></b></span>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_age">Возраст</h3>
+    <div class="hbars" id="ageBars"></div>
+  </div>
+</div>
+
+      <div class="panels-2 reveal">
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_countries">Топ стран</h3>
+    <div class="hbars" id="countryBars"></div>
+  </div>
+  <div class="panel">
+    <h3 class="panel-title" data-i18n="stats_languages">Топ языков</h3>
+    <div class="hbars" id="langBars"></div>
+  </div>
+</div>
+
+      <div class="section-header center reveal" style="margin-top:6rem">
+  <span class="section-tag" data-i18n="stats_fit_tag">Для кого</span>
+  <h2 class="section-title">
+    <span data-i18n="stats_fit_title">Кому подходит </span>
+    <span class="gradient-text italic" data-i18n="stats_fit_title_highlight">эта аудитория</span>
+  </h2>
+</div>
+<div class="fit-grid reveal" id="fitGrid"></div>
+
+      <div class="cta-card reveal" style="margin-top:5rem">
+  <div>
+    <span class="section-tag" data-i18n="cta_tag">Готовы начать?</span>
+    <h2 class="cta-title">
+      <span data-i18n="stats_cta_title">Покажем ваш бренд<br></span>
+      <span class="gradient-text italic" data-i18n="stats_cta_title_highlight">новой аудитории</span>
+    </h2>
+    <p class="cta-text" data-i18n="stats_cta_text">Расскажите о продукте — предложу формат и прогноз охвата.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn btn-primary magnetic">
+        <span data-i18n="cta_btn_brief">Заполнить бриф</span>
+        <span data-icon="arrow"></span>
+      </a>
+      <a data-link="tgDm" target="_blank" rel="noopener" class="btn btn-outline magnetic">
+        <span data-icon="telegram"></span>
+        <span data-i18n="cta_btn_telegram">Написать в Telegram</span>
+      </a>
+    </div>
+  </div>
+  <div class="floating-card glass">
+    <small data-i18n="cta_views">Просмотры за 30 дней</small>
+    <strong class="gradient-text" data-value="insights.views" data-format="k">0</strong>
+    <small><span data-value="insights.nonFollowersPct" data-suffix="%"></span> — <span data-i18n="cta_new_viewers">новые зрители</span></small>
+  </div>
+</div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">НЕЛЛИ</div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Модель · Контент-креатор</p>
+        <div class="footer-socials" id="footerSocials"></div>
+      </div>
+      <nav class="footer-nav" aria-label="Нижнее меню">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="stats.html" data-i18n="nav_stats">Статистика</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a>
+        <a href="about.html" data-i18n="nav_about">Обо мне</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Нелли. <span data-i18n="footer_rights">Все права защищены</span>.</span>
+    </div>
+  </div>
+</footer>
+
+ <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/mobile-fx.js"></script>
+  <script src="js/fx3d.js"></script>
+</body>
+</html>

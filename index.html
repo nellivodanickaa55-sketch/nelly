@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Нелли Вод (nelly_vod) — модель и контент-креатор</title>
+  <meta name="description" content="Нелли Вод (@nelly_vod) — модель и контент-креатор. 429K просмотров в месяц. Рекламные интеграции, UGC и съёмки для брендов.">
+  <link rel="canonical" href="https://nelly-vod.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Нелли Вод — модель и контент-креатор">
+  <meta property="og:description" content="Рекламные интеграции, UGC и съёмки для брендов. Статистика открыта.">
+  <meta property="og:url" content="https://nelly-vod.ru/">
+  <meta property="og:image" content="https://nelly-vod.ru/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Нелли Вод",
+    "alternateName": ["Нелли", "Nelly Vod", "nelly_vod"],
+    "jobTitle": "Модель и контент-креатор",
+    "url": "https://nelly-vod.ru/",
+    "image": "https://nelly-vod.ru/images/hero.jpg",
+    "sameAs": [
+      "https://www.instagram.com/nelly_vod",
+      "https://www.tiktok.com/@nelly_vod",
+      "https://t.me/nelly_vod"
+    ]
+  }
+  </script>
+  <!-- Страховка: если скрипты не загрузятся, сайт всё равно покажется через 4.5 сек -->
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ok)document.documentElement.classList.add('loaded','failsafe')},4500);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- ЯНДЕКС.МЕТРИКА: вставь сюда код счётчика -->
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nelly</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-pct" id="preloaderPct">0%</div>
+    </div>
+  </div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo"><span class="logo-main">НЕЛЛИ</span><span class="logo-sub">Model &amp; Creator</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Основное меню">
+      <a href="index.html" class="nav-item active" data-i18n="nav_home">Главная</a>
+      <a href="stats.html" class="nav-item" data-i18n="nav_stats">Статистика</a>
+      <a href="portfolio.html" class="nav-item" data-i18n="nav_portfolio">Портфолио</a>
+      <a href="about.html" class="nav-item" data-i18n="nav_about">Обо мне</a>
+      <a href="contact.html" class="nav-item nav-item-cta" data-i18n="nav_collab">Сотрудничество</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru" aria-label="Русский">РУ</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ПЕРВЫЙ ЭКРАН -->
+    <section class="hero">
+      <canvas id="webgl-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-label hero-anim" style="--d:.1s">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_available">Открыта для коллабораций</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="line"><span data-i18n="hero_title_1">Превращаю</span></span>
+            <span class="line"><span class="gradient-text italic" data-i18n="hero_title_2">внимание</span></span>
+            <span class="line"><span data-i18n="hero_title_3">в продажи</span></span>
+          </h1>
+          <p class="hero-description hero-anim" style="--d:.45s">
+            <span data-i18n="hero_desc">Модель и контент-креатор. Создаю нативный контент для брендов — такой, которому верят.</span>
+          </p>
+          <div class="hero-stats hero-anim" style="--d:.6s">
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-value="insights.views" data-format="k">0</span>
+              <span class="hero-stat-label" data-i18n="hero_stat_views">просмотров / мес</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-value="insights.interactions" data-format="k">0</span>
+              <span class="hero-stat-label" data-i18n="hero_stat_interactions">взаимодействий</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-value="insights.nonFollowersPct" data-suffix="%">0</span>
+              <span class="hero-stat-label" data-i18n="hero_stat_new">новых зрителей</span>
+            </div>
+          </div>
+          <div class="hero-cta hero-anim" style="--d:.75s">
+            <a href="stats.html" class="btn btn-primary magnetic" data-track="hero_stats">
+              <span data-i18n="hero_btn_stats">Смотреть статистику</span>
+              <span data-icon="arrow"></span>
+            </a>
+            <a href="contact.html" class="btn btn-outline magnetic" data-track="hero_contact">
+              <span data-i18n="hero_btn_contact">Обсудить проект</span>
+            </a>
+          </div>
+          <div class="hero-socials hero-anim" id="heroSocials" style="--d:.9s"></div>
+        </div>
+
+        <div class="hero-visual hero-anim" style="--d:.3s">
+          <div class="portrait" data-tilt>
+            <img class="portrait-img" src="images/hero.jpg" alt="Нелли — портрет" data-fallback fetchpriority="high">
+            <div class="portrait-fallback" aria-hidden="true">N</div>
+            <div class="portrait-badge glass">
+              <span data-value="insights.viewers" data-format="k">0</span>
+              <small data-i18n="hero_badge_viewers">зрителей за месяц</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#showreel" class="scroll-indicator"><span class="mouse"><span class="wheel"></span></span>Листайте</a>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span data-i18n="marquee_fashion">Fashion</span><span class="star">✦</span>
+        <span data-i18n="marquee_beauty">Beauty</span><span class="star">✦</span>
+        <span data-i18n="marquee_lifestyle">Lifestyle</span><span class="star">✦</span>
+        <span data-i18n="marquee_ugc">UGC</span><span class="star">✦</span>
+        <span data-i18n="marquee_reels">Reels</span><span class="star">✦</span>
+        <span data-i18n="marquee_shoots">Съёмки</span><span class="star">✦</span>
+        <!-- Дубль для бесшовной прокрутки -->
+        <span data-i18n="marquee_fashion">Fashion</span><span class="star">✦</span>
+        <span data-i18n="marquee_beauty">Beauty</span><span class="star">✦</span>
+        <span data-i18n="marquee_lifestyle">Lifestyle</span><span class="star">✦</span>
+        <span data-i18n="marquee_ugc">UGC</span><span class="star">✦</span>
+        <span data-i18n="marquee_reels">Reels</span><span class="star">✦</span>
+        <span data-i18n="marquee_shoots">Съёмки</span><span class="star">✦</span>
+      </div>
+    </div>
+
+    <!-- ШОУРИЛ -->
+    <section class="section showreel" id="showreel">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag" data-i18n="showreel_tag">Showreel</span>
+          <h2 class="section-title">
+            <span data-i18n="showreel_title">Минута, которая</span>
+            <span class="gradient-text italic" data-i18n="showreel_title_highlight">говорит больше</span>
+            <span data-i18n="showreel_title_end">резюме</span>
+          </h2>
+        </div>
+        <div class="reel reveal" id="reel">
+          <video class="reel-video" id="reelPreview" muted loop playsinline preload="metadata" poster="images/showreel-poster.jpg">
+            <source src="images/showreel.mp4" type="video/mp4">
+          </video>
+          <div class="reel-slides" id="reelSlides" aria-hidden="true"></div>
+          <div class="reel-shade" aria-hidden="true"></div>
+          <div class="reel-caption" aria-hidden="true"><span class="reel-rec"><i></i>REC</span><span id="reelTime">00:00</span></div>
+          <button class="reel-play" id="reelPlay" aria-label="Смотреть шоурил со звуком">
+            <span class="reel-play-ring"></span>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="reel-soon" data-i18n="showreel_soon">Шоурил в монтаже</span>
+          <div class="reel-title">Nelly — Showreel</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФИЛОСОФИЯ -->
+    <section class="section manifest" id="manifest">
+      <div class="container reveal">
+        <div class="manifest-card">
+          <svg class="manifest-ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="ringPath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+            <text><textPath href="#ringPath" textLength="500" lengthAdjust="spacing">NELLY · MODEL · CONTENT CREATOR · AUTHENTIC · </textPath></text>
+            <text x="100" y="108" text-anchor="middle" style="font-size:22px;letter-spacing:0">✦</text>
+          </svg>
+          <span class="manifest-mark" aria-hidden="true">“</span>
+          <span class="section-tag" data-i18n="manifest_tag">Философия</span>
+          <blockquote class="manifest-quote" id="quoteRotator" aria-live="polite"></blockquote>
+          <div class="manifest-foot">
+            <span class="manifest-sign">— Nelly</span>
+            <div class="quote-dots" id="quoteDots"></div>
+            <span class="manifest-counter" id="quoteCounter">01 / 04</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="features_tag">Почему я</span>
+          <h2 class="section-title">
+            <span data-i18n="features_title">Контент, который</span>
+            <span class="gradient-text italic" data-i18n="features_title_highlight">работает</span>
+          </h2>
+          <p class="section-sub" data-i18n="features_subtitle">Бренды приходят за красивой картинкой, а остаются за результатом.</p>
+        </div>
+        <div class="features-grid reveal">
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="users"></div>
+            <h3 class="feature-title" data-i18n="feature1_title">Живая аудитория</h3>
+            <p class="feature-desc" data-i18n="feature1_desc">Подписчики, которые комментируют, сохраняют и покупают по рекомендациям. Статистика открыта.</p>
+            <span class="feature-tag" data-i18n="feature1_tag">Без накруток</span>
+          </article>
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="camera"></div>
+            <h3 class="feature-title" data-i18n="feature2_title">Съёмка под ключ</h3>
+            <p class="feature-desc" data-i18n="feature2_desc">Идея, образ, локация, свет и монтаж. Вы получаете готовый контент, а не просто публикацию.</p>
+            <span class="feature-tag" data-i18n="feature2_tag">Фото + видео</span>
+          </article>
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="heart"></div>
+            <h3 class="feature-title" data-i18n="feature3_title">Нативная подача</h3>
+            <p class="feature-desc" data-i18n="feature3_desc">Продукт встраивается в ленту естественно, поэтому реклама не выглядит рекламой.</p>
+            <span class="feature-tag" data-i18n="feature3_tag">Доверие</span>
+          </article>
+          <article class="feature-card" data-tilt>
+            <div class="feature-icon" data-icon="chart"></div>
+            <h3 class="feature-title" data-i18n="feature4_title">Отчёт в цифрах</h3>
+            <p class="feature-desc" data-i18n="feature4_desc">После публикации — статистика: охваты, просмотры, переходы, сохранения.</p>
+            <span class="feature-tag" data-i18n="feature4_tag">Прозрачно</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК МЫ РАБОТАЕМ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="process_tag">Как мы работаем</span>
+          <h2 class="section-title">
+            <span data-i18n="process_title">Четыре шага до</span>
+            <span class="gradient-text italic" data-i18n="process_title_highlight">результата</span>
+          </h2>
+        </div>
+        <div class="process-grid reveal">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3 data-i18n="step1_title">Бриф</h3>
+            <p data-i18n="step1_desc">Вы рассказываете о продукте, задаче и сроках. Две минуты в форме на сайте.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3 data-i18n="step2_title">Концепция</h3>
+            <p data-i18n="step2_desc">Предлагаю идею, формат, образ и сценарий под вашу аудиторию.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3 data-i18n="step3_title">Съёмка</h3>
+            <p data-i18n="step3_desc">Снимаю, монтирую и согласовываю материал с вами до публикации.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <h3 data-i18n="step4_title">Публикация и отчёт</h3>
+            <p data-i18n="step4_desc">Выход контента по графику и подробная статистика по итогам.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <span class="section-tag" data-i18n="cta_tag">Готовы начать?</span>
+            <h2 class="cta-title">
+              <span data-i18n="cta_title">Создадим контент,<br>который</span>
+              <span class="gradient-text italic" data-i18n="cta_title_highlight">запомнят</span>
+            </h2>
+            <p class="cta-text" data-i18n="cta_text">Опишите задачу — отвечу в течение дня и предложу формат под ваш бюджет.</p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary magnetic" data-track="cta_contact">
+                <span data-i18n="cta_btn_brief">Заполнить бриф</span>
+                <span data-icon="arrow"></span>
+              </a>
+              <a data-link="tgDm" target="_blank" rel="noopener" class="btn btn-outline magnetic" data-track="contact_telegram">
+                <span data-icon="telegram"></span>
+                <span data-i18n="cta_btn_telegram">Написать в Telegram</span>
+              </a>
+            </div>
+          </div>
+          <div class="floating-card glass">
+            <small data-i18n="cta_views">Просмотры за 30 дней</small>
+            <strong class="gradient-text" data-value="insights.views" data-format="k">0</strong>
+            <small><span data-value="insights.nonFollowersPct" data-suffix="%"></span> — <span data-i18n="cta_new_viewers">новые зрители</span></small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">НЕЛЛИ</div>
+          <p class="footer-tagline" data-i18n="footer_tagline">Модель · Контент-креатор</p>
+          <div class="footer-socials" id="footerSocials"></div>
+        </div>
+        <nav class="footer-nav" aria-label="Нижнее меню">
+          <a href="index.html" data-i18n="nav_home">Главная</a>
+          <a href="stats.html" data-i18n="nav_stats">Статистика</a>
+          <a href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a>
+          <a href="about.html" data-i18n="nav_about">Обо мне</a>
+          <a href="contact.html" data-i18n="nav_collab">Сотрудничество</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Нелли. <span data-i18n="footer_rights">Все права защищены</span>.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/showreel.js"></script>
+  <script src="js/mobile-fx.js"></script>
+  <script src="js/fx3d.js"></script>
+</body>
+</html>

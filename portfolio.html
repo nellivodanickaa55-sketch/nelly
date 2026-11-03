@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Нелли</title>
+  <meta name="description" content="Избранные работы и коллаборации Нелли с брендами.">
+  <!-- Страховка: если скрипты не загрузятся, страница всё равно покажется -->
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__ok)document.documentElement.classList.add('loaded','failsafe')},4500);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Nelly</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-pct" id="preloaderPct">0%</div>
+    </div>
+  </div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo"><span class="logo-main">НЕЛЛИ</span><span class="logo-sub">Model &amp; Creator</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Основное меню">
+      <a href="index.html" class="nav-item" data-i18n="nav_home">Главная</a>
+      <a href="stats.html" class="nav-item" data-i18n="nav_stats">Статистика</a>
+      <a href="portfolio.html" class="nav-item active" data-i18n="nav_portfolio">Портфолио</a>
+      <a href="about.html" class="nav-item" data-i18n="nav_about">Обо мне</a>
+      <a href="contact.html" class="nav-item nav-item-cta" data-i18n="nav_collab">Сотрудничество</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru" aria-label="Русский">РУ</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="section portfolio-page">
+      <div class="container">
+        <div class="portfolio-hero reveal">
+  <h1 class="portfolio-hero-title">
+    <span data-i18n="portfolio_title">Избранные</span><br>
+    <span class="gradient-text italic" data-i18n="portfolio_title_highlight">проекты</span>
+  </h1>
+  <p class="section-sub" style="margin-inline:auto" data-i18n="portfolio_subtitle">Коллаборации с брендами. Каждый проект — история, рассказанная визуально.</p>
+</div>
+
+<div class="portfolio-filters reveal">
+  <button class="filter-btn active" data-filter="*" data-i18n="portfolio_all">Все работы</button>
+  <button class="filter-btn" data-filter="fashion" data-i18n="portfolio_fashion">Fashion</button>
+  <button class="filter-btn" data-filter="beauty" data-i18n="portfolio_beauty">Beauty</button>
+  <button class="filter-btn" data-filter="lifestyle" data-i18n="portfolio_lifestyle">Lifestyle</button>
+  <button class="filter-btn" data-filter="commercial" data-i18n="portfolio_commercial">Коммерция</button>
+</div>
+
+        <!-- Фото клади в images/portfolio/ с именами 01.jpg ... 06.jpg -->
+        <div class="portfolio-grid reveal" id="portfolioGrid">
+          <article class="portfolio-item" data-category="fashion">
+            <div class="portfolio-image">
+              <img src="images/portfolio/01.jpg" alt="Fashion-съёмка" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">F</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Fashion</span>
+                <h3 class="portfolio-title">Модная редакция</h3>
+                <p class="portfolio-desc">Редакционная съёмка: минимализм, мягкий свет, акцент на силуэт.</p>
+                <button class="portfolio-btn" data-modal="1">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item portfolio-item-wide" data-category="commercial">
+            <div class="portfolio-image">
+              <img src="images/portfolio/02.jpg" alt="Рекламная кампания" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">C</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Коммерция</span>
+                <h3 class="portfolio-title">Рекламная кампания</h3>
+                <p class="portfolio-desc">UGC-контент к запуску коллекции: Reels, Stories и фото для карточек товара.</p>
+                <button class="portfolio-btn" data-modal="2">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="beauty">
+            <div class="portfolio-image">
+              <img src="images/portfolio/03.jpg" alt="Beauty-съёмка" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">B</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Beauty</span>
+                <h3 class="portfolio-title">Beauty кампания</h3>
+                <p class="portfolio-desc">Контент для уходовой косметики: крупные планы и текстуры.</p>
+                <button class="portfolio-btn" data-modal="3">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="lifestyle">
+            <div class="portfolio-image">
+              <img src="images/portfolio/04.jpg" alt="Travel-съёмка" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">L</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Lifestyle</span>
+                <h3 class="portfolio-title">Travel серия</h3>
+                <p class="portfolio-desc">Коллаборация с отелем: публикации и фото для сайта и соцсетей.</p>
+                <button class="portfolio-btn" data-modal="4">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item portfolio-item-tall" data-category="fashion">
+            <div class="portfolio-image">
+              <img src="images/portfolio/05.jpg" alt="Fashion-портрет" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">F</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Fashion</span>
+                <h3 class="portfolio-title">Модный портрет</h3>
+                <p class="portfolio-desc">Съёмка для лукбука: студийный свет, монохромная палитра.</p>
+                <button class="portfolio-btn" data-modal="5">Подробнее</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="beauty">
+            <div class="portfolio-image">
+              <img src="images/portfolio/06.jpg" alt="Skincare-кампания" loading="lazy" onerror="this.parentNode.classList.add('no-img')">
+              <div class="portfolio-fallback" aria-hidden="true">B</div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Beauty</span>
+                <h3 class="portfolio-title">Skincare амбассадор</h3>
+                <p class="portfolio-desc">Долгосрочное сотрудничество с брендом натуральной косметики.</p>
+                <button class="portfolio-btn" data-modal="6">Подробнее</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta reveal" style="margin-top:5rem">
+  <span class="section-tag" data-i18n="portfolio_more_tag">Больше работ</span>
+  <h2 class="section-title">
+    <span data-i18n="portfolio_more_title">Полное портфолио<br>в </span>
+    <span class="gradient-text italic" data-i18n="portfolio_more_title_highlight">Instagram</span>
+  </h2>
+  <a href="https://www.instagram.com/nelly_vod" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+    <span data-i18n="portfolio_more_btn">Смотреть в Instagram</span>
+    <span data-icon="arrow"></span>
+  </a>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">НЕЛЛИ</div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Модель · Контент-креатор</p>
+        <div class="footer-socials" id="footerSocials"></div>
+      </div>
+        <nav class="footer-nav" aria-label="Нижнее меню">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="stats.html" data-i18n="nav_stats">Статистика</a>
+        <a href="portfolio.html" data-i18n="nav_portfolio">Портфолио</a>
+        <a href="about.html" data-i18n="nav_about">Обо мне</a>
+      </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Нелли. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/mobile-fx.js"></script>
+  <script src="js/fx3d.js"></script>
+</body>
+</html>
