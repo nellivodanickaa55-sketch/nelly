@@ -8,18 +8,18 @@ window.MODEL_DATA = {
 
   social: {
     instagram: { 
-      handle: "@nelly_vod", 
+      handle: "@Nelly_Vod", 
       url: "https://www.instagram.com/nelly_vod",
       followers: 17500 
     },
     tiktok: { 
-      handle: "@nelly_vod", 
+      handle: "@Nelly_Vod", 
       url: "https://www.tiktok.com/@nelly_vod",
       followers: 10000
     },
     telegram: { 
-      handle: "@nelly_vod", 
-      url: "https://t.me/nelly_vod",
+      handle: "@Nelly_Vod", 
+      url: "https://t.me/Nelly_Vod",
       followers: 1300
     }
   },
@@ -54,7 +54,7 @@ window.MODEL_DATA = {
   ],
 
   contact: {
-    tgUser: "V_nellyvod",
+    tgUser: "Nelly_Vod",
     get tgDm() {
       return "https://t.me/" + this.tgUser + "?text=" +
         encodeURIComponent("Здравствуйте, Нелли! Пишу с вашего сайта по поводу сотрудничества.");
